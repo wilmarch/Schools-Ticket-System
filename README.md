@@ -36,7 +36,7 @@ Aplikasi ini menerapkan **role based access control**, di mana setiap role memil
 
 ```bash
 # Clone repository
-git clone <repository-url>
+git clone https://github.com/wilmarch/Schools-Ticket-System.git
 cd school-ticket-system
 
 # Setup Backend
