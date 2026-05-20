@@ -1,0 +1,18 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Ticket {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String
+  priority    String   // Low, Medium, High
+  status      String   @default("Submitted") // Submitted, Ongoing, Done
+  authorEmail String   // Penanda siapa teacher yang buat
+  createdAt   DateTime @default(now())
+}
